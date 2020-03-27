@@ -1,0 +1,101 @@
+<html>
+<body>
+
+<h2>Classes</h2>
+
+<form action="/action_page.php">
+  <br>
+  <label for="cname">Course:</label>
+  <input type="text" id="cname" name="cname">
+  <br>
+  <br>
+  <label for="sname">Number of days to schedule:</label>
+  <input type="text" od="sname" name="sname">
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+<link rel="stylesheet" href="style.css">
+<div class="menu-bar">
+<ul>
+<li class="active"><a href="#">Rooms</a></li>
+<dive class="sub-menu">
+  <ul>
+      <li>F904</li>
+      <li>F905</li>
+      <li>F906</li>
+      <li>F907</li>
+      <li>F908</li>
+      <li>F1113</li>
+      <li>F1201</li>
+      <li>F1203</li>
+      <li>F1204</li>
+      <li>M1209</li>
+<ul>
+</div>
+</body>
+</html>
+
+
+
+
+part 2 new file (style css)
+
+*
+{
+	padding: 0;
+  margin: 0; 
+  box-sizing: border-box; 
+}
+body
+{
+  
+}
+.menu-bar
+{
+  background: rgb(255, 255, 255);
+  text-align:left;
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color:black;
+}
+.menu-bar ul li
+{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color:black;
+}
+.active, .menu-bar ul li:hover 
+{
+  background:#FFFFFF;
+  border-radius: 3px;
+}
+.menu-bar .fa
+{
+  margin-right: 8px;
+}
+.sub-menu
+{
+  display: none;
+}
+.menu-bar il li:hover .sub-menu
+{
+  display: block;
+  position: absolute;
+  background: rgb(0,0,0);
+
+}
+.menu-bar ul li:hover .sub-menu ul
+{
+  display: block;
+  position: absolute;
+  
+}
